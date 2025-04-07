@@ -1,55 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>RINSEC LLC - Cybersecurity Experts in Penetration Testing</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+        :root {
+            --primary: #0a0f1c;
+            --secondary: #1f2937;
+            --accent: #00c896;
+            --light: #f9fafb;
+            --text: #e5e7eb;
+        }
+
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
         header {
-            background-color: #222;
-            color: white;
-            padding: 20px 0;
+            background: var(--secondary);
+            padding: 40px 20px;
             text-align: center;
         }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+
         nav {
+            background: #111827;
             text-align: center;
-            background-color: #444;
-            padding: 10px 0;
+            padding: 15px 0;
         }
+
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: var(--text);
+            margin: 0 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
         section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 1200px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: var(--secondary);
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
         }
-        h1, h2 {
-            color: #222;
+
+        h2 {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-size: 1.8em;
         }
+
+        ul {
+            list-style: square;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
         footer {
+            background: #111827;
             text-align: center;
-            padding: 20px 0;
-            background-color: #222;
-            color: white;
+            padding: 20px 10px;
+            font-size: 0.9em;
+            color: var(--text);
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                margin: 20px;
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to RINSEC LLC</h1>
+        <h1>RINSEC LLC</h1>
         <p>Your Trusted Partner in Penetration Testing and Cybersecurity Solutions</p>
     </header>
 
@@ -86,7 +146,7 @@
             <li>Social Engineering Testing</li>
         </ul>
         <p>
-            Our penetration testing services are designed to simulate real-world cyber attacks, enabling your
+            Our penetration testing services simulate real-world cyber attacks, enabling your
             organization to identify and address security weaknesses before they can be exploited.
         </p>
     </section>
@@ -95,7 +155,6 @@
         <h2>Our Certifications</h2>
         <ul>
             <li>ISO 27001:2022 Lead Auditor</li>
-            <li>CISM (Certified Information Security Manager)</li>
             <li>CISA (Certified Information Systems Auditor)</li>
             <li>OSCP (Offensive Security Certified Professional)</li>
         </ul>
@@ -113,7 +172,7 @@
             penetration testing needs.
         </p>
         <p>Email: <a href="mailto:rinsecmn@proton.me">rinsecmn@proton.me</a></p>
-        <p>Phone: +976 88004235</p>
+        <p>Phone: +976 89098708</p>
         <p>Address: 127.0.0.1 and localhost</p>
     </section>
 
